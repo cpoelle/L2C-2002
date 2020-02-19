@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 5 == 0) {
+        //         document.write(i + "!!<br>");
+        //     } else if (i % 3 == 0) {
+        //         document.write(i + "!<br>");
+        //     } else {
+        //         document.write(i + "<br>");
+        //     }
+        // }
+
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 5 == 0 && i % 3 == 0) {
+        //         document.write(i + "!!!<br>");
+        //     } else if (i % 5 == 0) {
+        //         document.write(i + "!!<br>");
+        //     } else if (i % 3 == 0) {
+        //         document.write(i + "!<br>");
+        //     } else {
+        //         document.write(i + "<br>");
+        //     }
+        // }
+        
+        for (let i = 1; i <= 100; i++) {
+            let exclamation = "";
+            if (i % 3 == 0) {
+                exclamation += "!";
+            }
+            if (i % 5 == 0) {
+                exclamation += "!!";
+            }
+            document.write(i + exclamation + "<br>");
+        }
+
+
+        // HOMEWORK
+
+        // 1. Ask user for a year. Tell the user if it is a Leap Year
+
+        // 2. Print all the Leap Years between 1800 and 2400
+
+        
+
+    </script>
+</body>
+</html>
