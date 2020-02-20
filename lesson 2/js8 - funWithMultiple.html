@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// for (let i = 1; i <= 100; i++) {
+			//     if (i % 5 == 0) {
+			//         document.write(i + "!!<br>");
+			//     } else if (i % 3 == 0) {
+			//         document.write(i + "!<br>");
+			//     } else {
+			//         document.write(i + "<br>");
+			//     }
+			// }
 
-        // for (let i = 1; i <= 100; i++) {
-        //     if (i % 5 == 0) {
-        //         document.write(i + "!!<br>");
-        //     } else if (i % 3 == 0) {
-        //         document.write(i + "!<br>");
-        //     } else {
-        //         document.write(i + "<br>");
-        //     }
-        // }
+			// for (let i = 1; i <= 100; i++) {
+			//     if (i % 5 == 0 && i % 3 == 0) {
+			//         document.write(i + "!!!<br>");
+			//     } else if (i % 5 == 0) {
+			//         document.write(i + "!!<br>");
+			//     } else if (i % 3 == 0) {
+			//         document.write(i + "!<br>");
+			//     } else {
+			//         document.write(i + "<br>");
+			//     }
+			// }
 
-        // for (let i = 1; i <= 100; i++) {
-        //     if (i % 5 == 0 && i % 3 == 0) {
-        //         document.write(i + "!!!<br>");
-        //     } else if (i % 5 == 0) {
-        //         document.write(i + "!!<br>");
-        //     } else if (i % 3 == 0) {
-        //         document.write(i + "!<br>");
-        //     } else {
-        //         document.write(i + "<br>");
-        //     }
-        // }
-        
-        for (let i = 1; i <= 100; i++) {
-            let exclamation = "";
-            if (i % 3 == 0) {
-                exclamation += "!";
-            }
-            if (i % 5 == 0) {
-                exclamation += "!!";
-            }
-            document.write(i + exclamation + "<br>");
-        }
+			// for (let i = 1; i <= 100; i++) {
+			// 	let exclamation = "";
+			// 	if (i % 3 == 0) {
+			// 		exclamation += "!";
+			// 	}
+			// 	if (i % 5 == 0) {
+			// 		exclamation += "!!";
+			// 	}
+			// 	document.write(i + exclamation + "<br>");
+			// }
 
+			// HOMEWORK
+			// 1. Ask user for a year. Tell the user if it is a Leap Year
 
-        // HOMEWORK
+			let year = prompt("What´s your favourite year?");
 
-        // 1. Ask user for a year. Tell the user if it is a Leap Year
+			if (year % 400 == 0) {
+				document.write("Cool, " + year + " is a nice Leap Year!");
+			} else if (year % 100 == 0) {
+				document.write("Nope, " + year + " is not a Leap Year!");
+			} else if (year % 4 == 0)
+				document.write("Cool, " + year + " is a nice Leap Year!");
+			else {
+				document.write("Nope, " + year + " is not a Leap Year!");
+			}
 
-        // 2. Print all the Leap Years between 1800 and 2400
+			// 2. Print all the Leap Years between 1800 and 2400
 
-        
-
-    </script>
-</body>
+			for (let i = 1800; i <= 2400; i++) {
+				if (i % 400 == 0) {
+					document.write(i + " <br>");
+				} else if (i % 4 == 0 && i % 100 != 0) {
+					document.write(i + "<br>");
+				}
+			}
+		</script>
+	</body>
 </html>
