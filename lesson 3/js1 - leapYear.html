@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let year = prompt("What's the year?");
+
+        // every 4 years (multiple of 4)
+        // except every 100 years (multiple of 100)
+        // except every 400 years (multiple of 400)
+
+        let leapYear;
+
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    leapYear = true;
+                } else {
+                    leapYear = false;
+                }
+            } else {
+                leapYear = true;
+            }
+        } else {
+            leapYear = false;
+        }
+
+
+        if (leapYear) {
+            document.write("YO!!!!! 1 more day!!!!!")
+        } else {
+            document.write("😿")
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let numbers = [32, 45, 12, 7, 90, 54, 62, 10];
+
+        let total = 0;
+        let highest = numbers[0];
+        let lowest = numbers[0];
+        let highestFromOddPos = numbers[1];
+
+        for (let i = 0; i < numbers.length; i++) {
+            total += numbers[i];
+
+            if (numbers[i] > highest) {
+                highest = numbers[i];
+            }
+            if (numbers[i] < lowest) {
+                lowest = numbers[i];
+            }
+
+            if (i % 2 != 0) {
+                if (numbers[i] > highestFromOddPos) {
+                    highestFromOddPos = numbers[i];
+                }
+            }
+        }
+
+        // Calculate the average
+        let avg = total / numbers.length;
+
+        
+        // Print my results on the page
+        document.write("Total: " + total + "<br>");
+        document.write("AVG: " + avg + "<br>");
+        document.write("Highest: " + highest + "<br>");
+        document.write("Lowest: " + lowest + "<br>");
+        document.write("Highest from Odd positions: " + highestFromOddPos + "<br>");
+
+    </script>
+</body>
+</html>

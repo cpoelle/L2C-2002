@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ARRAYS contain multiple values!
+
+        let names = ["Bob", "Joe", "Max", "Trudy", "Rex"];
+
+        names[0] = "Robert";
+
+        // document.write(names[0] + "<br>");
+        // document.write(names[1] + "<br>");
+        // document.write(names[2] + "<br>");
+        // document.write(names[3] + "<br>");
+        // document.write(names[4] + "<br>");
+
+        // for (let i = 0; i < names.length; i ++) {
+        //     // document.write(i + 1 + "<br>");
+        //     // document.write(names[i] + "<br>");
+        //     // document.write("-----<br>");
+
+        //     document.write((i + 1) + " - " + names[i] + "<br>");
+        //     // document.write(names[i] + " - " + (i + 1) + "<br>");
+
+        // }
+
+        // for (let i = 0; i < names.length; i ++) {
+        //     if (i == 0) {
+        //         document.write(names[i]);
+        //     } else {
+        //         document.write(" - " + names[i]);
+        //     } 
+        // }
+
+        // for (let i = 0; i < names.length; i ++) {
+        //     if (i > 0) {
+        //         document.write(" - ");
+        //     }
+        //     document.write(names[i]);
+        // }
+
+        let seperator = "";
+        for (let i = 0; i < names.length; i ++) {
+            document.write(seperator + names[i]);
+            seperator = " - ";
+        }
+    </script>
+</body>
+</html>
